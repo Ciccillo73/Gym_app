@@ -1,0 +1,13 @@
+<h1>All the Bookings</h1>
+
+<% for booking in @bookings %>
+<p>Course Name</p>
+
+<p> <%= booking.gym_course().course_name %></p>
+<p>Member Name</p>
+<p> <%= booking.member().name %></p>
+<form action="/joinings/<%= booking.id %>/delete" method="POST">
+<button id="submit"  type="submit">DELETE</button>
+<hr>
+</form>
+<% end %>

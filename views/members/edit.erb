@@ -1,0 +1,15 @@
+<H1>EDIT MEMBERS PAGE</H1>
+<form action="/members/<%= @member.id%>" method="POST">
+	<label for="name">Name</label><br />
+	<input id="name" type="text" name="name" value="<%= @member.name%>" required/> <br />
+
+	<label for="surname">Surname</label><br />
+	<input id="surname" type="text" name= "surname" value="<%= @member.surname%>" required/> <br />
+
+	<label for="premium">Premium</label><br />
+	<select id="premium" name="premium">
+		<option value="true">Yes</option>
+		<option value="false">No</option>
+	</select><br />
+	<input type='submit' value="Submit"/>
+</form>

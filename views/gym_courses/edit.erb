@@ -1,0 +1,22 @@
+<form action="/gym_courses/<%= @gym_course.id%>" method="POST">
+<p></p>
+	<label for="course_name"  >Course</label><br />
+	<input type="text" name="course_name" value="<%= @gym_course.course_name%>">
+	<p></p>
+
+	<label for="capacity"  >Capacity</label><br />
+	<input type="number" name="capacity" value="<%= @gym_course.capacity%>">
+	<p></p>
+
+
+
+
+
+
+	<label for="offpeak">OffPeak</label><br />
+	<select id="offpeak" name="offpeak">
+		<option value="true">Yes</option>
+		<option value="false">No</option>
+	</select><br />
+	<input type='submit' value="Submit"/>
+</form>

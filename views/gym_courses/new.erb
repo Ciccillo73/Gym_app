@@ -1,0 +1,14 @@
+<form action="/gym_courses" method="POST">
+	<label for="course_name">Course</label><br />
+	<input  type="text" name="course_name" required/> <br />
+
+	<label for="capacity">Capacity</label><br />
+	<input  type="number" name= "capacity" required/> <br />
+
+	<label for="offpeak">Offpeak</label><br />
+	<select  name="offepeak">
+		<option value="true">Yes</option>
+		<option value="false">No</option>
+	</select><br />
+	<input type='submit' value="Submit"/>
+</form>

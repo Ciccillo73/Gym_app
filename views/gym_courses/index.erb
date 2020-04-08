@@ -1,0 +1,19 @@
+<h1>Courses list</h1>
+
+<h2><a href="/gym_courses/new">Create a New Course</a></h2>
+
+<table>
+  <tr>
+    <th>Course Type</th>
+    <th></th>
+
+  </tr>
+  <% for gym_course in @gym_courses %>
+ <tr>
+   <td><a href="/gym_courses/<%= gym_course.id %>"><%= gym_course.course_name %></a>
+    </td>
+    <td><a href="gym_courses/<%= gym_course.id %>/edit">Edit</a></td>
+    <td><a href="gym_courses/<%= gym_course.id %>/show_partecipants">Show all partecipants</a></td>
+    </tr>
+    <% end %>
+</table>

@@ -1,0 +1,26 @@
+
+<h1>All Members list</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th>Surname</th>
+    <th></th>
+    <th>Premium</th>
+      </tr>
+  <% for member in @members%>
+ <tr>
+   <td><%= member.name %>
+    </td>
+    <td>|</td>
+    <td>
+      <%= member.surname %></td>
+      <td>|</td>
+      <td>
+        <%= member.premium %></td>
+        <td><a href="members/<%= member.id %>/edit">Edit</a></td>
+    </tr>
+    <% end %>
+    <h3><a href="/members/new">Add Member</a></h3>
+</table>

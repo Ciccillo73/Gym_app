@@ -1,0 +1,30 @@
+<h1>Book a Course</h1>
+
+<form action="/joinings" method="POST">
+
+<label for="course_name">Course Name</label>
+<select id="course_name" name="gym_course_id">
+<% for course in @courses %>
+<option value="<%= course.id %>"><%= course.course_name %></option>
+<% end %>
+</select>
+
+<label for="name">Member</label>
+<select id="name" name="member_id">
+<% for name in @members %>
+<option value="<%= name.id %>"><%= name.name %></option>
+
+<% end %>
+
+</select>
+
+<input type="submit" id="submit" value="Submit">
+
+
+
+
+
+
+
+
+</form>
